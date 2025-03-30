@@ -94,3 +94,10 @@ npm run dev
 - Uses PYTHON_VERSION = 3.12.1 to match the .so file
 - Build command: pip install -r requirements.txt
 - Start command: uvicorn backend.run_solver:app --host 0.0.0.0 --port 10000
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome! Just fork the repo, make your changes, and submit a PR.
+
+
