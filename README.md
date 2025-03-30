@@ -17,7 +17,7 @@ An interactive full-stack A* Tile Puzzle Visualizer that allows users to input c
 
 ## 📸 Demo
 
-<img src="https://raw.githubusercontent.com/aayush4515/a-star-visualizer/main/demo.gif" alt="Puzzle Solver Demo" width="500"/>
+<img src="./assets/PuzzleSolver.gif).gif" alt="Puzzle Solver Demo" width="500"/>
 
 ---
 
