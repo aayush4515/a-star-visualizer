@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the backend directory to sys.path so Python can find the .so file
+sys.path.append(os.path.dirname(__file__))
+
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
