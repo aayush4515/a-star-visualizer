@@ -2,7 +2,6 @@
 
 [![Render Backend](https://img.shields.io/badge/render-backend-blue)](https://tile-puzzle-solver.onrender.com)
 [![Vercel Frontend](https://img.shields.io/badge/vercel-frontend-black)](https://tile-puzzle-solver.vercel.app)
-[![CI/CD](https://github.com/aayush4515/a-star-visualizer/actions/workflows/main.yml/badge.svg)](https://github.com/aayush4515/a-star-visualizer/actions)
 
 An interactive full-stack A* Tile Puzzle Visualizer that allows users to input custom grid sizes, define the puzzle's start and goal states, and watch the solution unfold step by step.
 
@@ -63,10 +62,11 @@ cd a-star-visualizer
 
 # Backend (Python + pybind11 + FastAPI)
 cd backend
-# Make sure you use Python 3.12 to match the .so file
+# Make sure you use Python 3.12.1 to match the .so file
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+uvicorn run_solver::app --reload
 
 # Frontend
 cd ../frontend
