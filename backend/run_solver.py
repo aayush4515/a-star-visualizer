@@ -34,6 +34,10 @@ class Step(BaseModel):
 class PuzzleResponse(BaseModel):
     solution: list[Step]
 
+@app.get("/")
+def root():
+    return {"message": "Backend is alive!"}
+
 @app.post("/solve")
 def solve_puzzle(puzzle: PuzzleRequest):
     try:
@@ -48,6 +52,8 @@ def solve_puzzle(puzzle: PuzzleRequest):
         return response
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
 
 # Run with: 'python3 run_solver.py'
 if __name__ == "__main__":
