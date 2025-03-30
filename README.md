@@ -72,6 +72,7 @@ uvicorn run_solver::app --reload
 cd ../frontend
 npm install
 npm run dev
+```
 
 ---
 
