@@ -34,10 +34,6 @@ class Step(BaseModel):
 class PuzzleResponse(BaseModel):
     solution: list[Step]
 
-@app.get("/")
-def root():
-    return {"message": "Backend is alive!"}
-
 @app.post("/solve")
 def solve_puzzle(puzzle: PuzzleRequest):
     try:

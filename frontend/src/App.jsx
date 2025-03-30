@@ -21,20 +21,29 @@ export default function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:8000/solve", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        rows,
-        cols,
-        start: startTiles,
-        goal: goalTiles,
-      }),
-    });
-
-    const data = await res.json();
-    setSolution(data.solution.map((step) => step.state));
-    setStepIndex(0);
+    try{
+      const res = await fetch("https://tile-puzzle-solver.onrender.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          rows,
+          cols,
+          start: startTiles,
+          goal: goalTiles,
+        }),
+      });
+  
+      if (!res.ok) {
+        throw new Error("Server error. Please check your input.");
+      }
+  
+      const data = await res.json();
+      setSolution(data.solution.map((step) => step.state));
+      setStepIndex(0);
+    } catch (error) {
+      alert("Error solving puzzle: " + error.message);
+    }
+    
   };
 
   return (
