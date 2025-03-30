@@ -3,7 +3,7 @@
 ![Render Backend](https://img.shields.io/badge/render-backend-blue)
 [![Vercel Frontend](https://img.shields.io/badge/vercel-frontend-black)](https://tile-puzzle-solver.vercel.app)
 
-An interactive full-stack A* Tile Puzzle Visualizer that allows users to input custom grid sizes, define the puzzle's start and goal states, and watch the solution unfold step by step.
+An interactive full-stack Tile Puzzle Visualizer using A* search algorithm that allows users to input custom grid sizes, define the puzzle's start and goal states, and watch the solution unfold step by step.
 
 ---
 
