@@ -76,11 +76,20 @@ npm run dev
 
 ---
 
-🔐 Environment Variables
-Create .env and .env.production files in frontend/:
+## 🔐 Environment Variables
+- Create .env file in frontend/:
+- VITE_API_BASE=http://localhost:8000
+- For production, Render and Vercel manage these automatically.
 
-env
-Copy
-Edit
-VITE_API_BASE=http://localhost:8000
-For production, Render and Vercel manage these automatically.
+---
+
+## !📤 Deployment
+###Frontend (Vercel)
+- Connected to GitHub repo for auto-deploy on main
+- Uses .env.production for API base
+
+###Backend (Render)
+- Also auto-deploys from GitHub
+- Uses PYTHON_VERSION = 3.12.1 to match the .so file
+- Build command: pip install -r requirements.txt
+- Start command: uvicorn backend.run_solver:app --host 0.0.0.0 --port 10000
