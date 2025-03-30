@@ -72,3 +72,14 @@ uvicorn run_solver::app --reload
 cd ../frontend
 npm install
 npm run dev
+
+---
+
+🔐 Environment Variables
+Create .env and .env.production files in frontend/:
+
+env
+Copy
+Edit
+VITE_API_BASE=http://localhost:8000
+For production, Render and Vercel manage these automatically.
