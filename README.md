@@ -98,6 +98,10 @@ npm run dev
 ---
 
 ## 🤝 Contributing
-Pull requests are welcome! Just fork the repo, make your changes, and submit a PR.
+### Pull requests are welcome! Just fork the repo, make your changes, and submit a PR.
 
+---
+
+## 🧠 License
+### This project is licensed under the MIT License.
 
