@@ -22,6 +22,7 @@ export default function App() {
     e.preventDefault();
 
     const API_BASE = import.meta.env.VITE_API_BASE;
+    console.log("🔥 API_BASE is", API_BASE);
 
     try{
       const res = await fetch(`${API_BASE}/solve`, {
