@@ -117,3 +117,7 @@ Pull requests are welcome! Just fork the repo, make your changes, and submit a P
 ## 🧠 License
 This project is licensed under the MIT License.
 
+---
+
+## 🧑‍💻 Author
+Built with ❤️ by Aayush
