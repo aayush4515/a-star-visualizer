@@ -3,4 +3,3 @@ __pycache__/
 *.pyc
 .env
 .env.production
-backend/__pycache__/run_solver.cpython-313.pyc
