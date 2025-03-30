@@ -53,6 +53,25 @@ An interactive full-stack A* Tile Puzzle Visualizer that allows users to input c
 
 ---
 
+## 🧪 To Do / Upcoming
+- Add dark mode toggle 🌙
+
+- Allow step-by-step manual navigation 🔄
+
+- Add puzzle solvability check ⚠️
+
+- Add move list and path cost info 📊
+
+- Add timer and animation speed controls ⏱️
+
+- Enhance accessibility and keyboard navigation
+
+- Dockerize backend and set up GitHub Actions for CI
+
+- Add test coverage (Pytest + React Testing Library)
+
+---
+
 ## 📦 Installation (Dev Setup)
 
 ```bash
@@ -98,10 +117,10 @@ npm run dev
 ---
 
 ## 🤝 Contributing
-### Pull requests are welcome! Just fork the repo, make your changes, and submit a PR.
+Pull requests are welcome! Just fork the repo, make your changes, and submit a PR.
 
 ---
 
 ## 🧠 License
-### This project is licensed under the MIT License.
+This project is licensed under the MIT License.
 
