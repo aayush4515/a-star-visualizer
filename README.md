@@ -84,11 +84,12 @@ npm run dev
 ---
 
 ## !📤 Deployment
-###Frontend (Vercel)
+
+### Frontend (Vercel)
 - Connected to GitHub repo for auto-deploy on main
 - Uses .env.production for API base
 
-###Backend (Render)
+### Backend (Render)
 - Also auto-deploys from GitHub
 - Uses PYTHON_VERSION = 3.12.1 to match the .so file
 - Build command: pip install -r requirements.txt
