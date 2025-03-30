@@ -99,7 +99,7 @@ npm run dev
 
 ### Frontend (Vercel)
 - Connected to GitHub repo for auto-deploy on main
-- Uses .env.production for API base
+- Uses environment variable VITE_API_BASE in Vercel 
 
 ### Backend (Render)
 - Also auto-deploys from GitHub
