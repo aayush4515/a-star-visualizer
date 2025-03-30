@@ -1,1 +1,6 @@
 astar_module.cpython-313-darwin.so
+__pycache__/
+*.pyc
+.env
+.env.production
+backend/__pycache__/run_solver.cpython-313.pyc
