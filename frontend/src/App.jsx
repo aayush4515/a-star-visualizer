@@ -21,8 +21,10 @@ export default function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const API_BASE = import.meta.env.VITE_API_BASE;
+
     try{
-      const res = await fetch("https://tile-puzzle-solver.onrender.com/solve", {
+      const res = await fetch(`${API_BASE}/solve`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -32,18 +34,18 @@ export default function App() {
           goal: goalTiles,
         }),
       });
-  
+
       if (!res.ok) {
         throw new Error("Server error. Please check your input.");
       }
-  
+
       const data = await res.json();
       setSolution(data.solution.map((step) => step.state));
       setStepIndex(0);
     } catch (error) {
       alert("Error solving puzzle: " + error.message);
     }
-    
+
   };
 
   return (
